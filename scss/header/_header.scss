@@ -1,0 +1,100 @@
+header {
+    // width: 1600px;
+    height: 80px;
+    background-color: black;
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-content: center;
+        // align-items: center;
+        padding: 0 220px;
+        .gamburger{
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+
+            .line{
+                width: 40px;
+                height: 4px;
+                background-color: #FFFFFF;
+
+            }
+        }
+
+        .lists {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            justify-content: center;
+            // align-items: center;
+            // margin-left: 63px;
+            list-style-type: none;
+            padding: 29px 0;
+            gap: 24px;
+
+            .items {
+                // margin-right: 0;
+                // padding: 0;
+                width: 78px;
+                font-family: 'Roboto', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 140%;
+                color: #FFFFFF;
+            }
+        }
+
+        .first_img{
+        padding: 14px 0;
+        margin-right: 63px;
+        }
+        .second_img {
+            padding: 29px  0;
+            margin-left: 438px;
+        }
+
+        @media screen and(max-width: 1000px) {
+            .wrapper {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                overflow: hidden;
+            }
+        }
+    
+        @media screen and(max-width: 640px) {
+            header{
+                width: 640px;
+            }
+            
+            .wrapper{
+                height: 34px;
+            }
+            
+            .lists {
+                grid-template-columns: 0fr;
+                // flex-direction: column;
+                
+            }
+            .lists{
+                display: none;
+            }
+
+            .first_img{
+                padding-left: 20px;
+                margin-right: 400px;
+            }
+            .second_img{
+                display: none;
+            }
+            .gamburger{
+                margin: 16px 20px 13px 0;
+                display: block;
+            }
+            .line{
+                margin-bottom: 4px;
+            }
+        }
+    }
+    
+}

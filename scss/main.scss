@@ -1,0 +1,17 @@
+@import './blocks/container';
+@import './header/header';
+@import './blocks/fonts';
+@import './section/section';
+
+body{
+    border: 1px solid blueviolet;
+    width: 1600px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 640px) {
+    section{
+        // width: 640px;
+    }
+}
+
